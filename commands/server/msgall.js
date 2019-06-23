@@ -37,13 +37,14 @@ class msgallCommand extends commando.Command {
         member.send({embed: new Discord.RichEmbed()
             .setTitle("**FrostedHost | Private Message**")
             .setColor("#4286f4")
-            .addField(msgallmsg, "-> Management Team")}).then(moderationlogs.send({embed: new Discord.RichEmbed()
+            .addField(msgallmsg, "-> Management Team")})
+      moderationlogs.send({embed: new Discord.RichEmbed()
               .setTitle("**FrostedHost | MsgAll**")
               .setColor("#426f4")
               .addField("🔑 | Executor", message.author.tag)
               .addField("💬 | MsgAll Message", message.content)
               .setTimestamp()
-              .setFooter("FrostedHost Bot | created by hieu#0843")}));
+              .setFooter("FrostedHost Bot | created by hieu#0843")});
         });
   }
 }
