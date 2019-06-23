@@ -6,7 +6,7 @@ const bot = new commando.Client({
     unknownCommandResponse: false
 });
 
-bot.login("NTU5NzQyNjI1NjcwODg5NDcy.XPtoZQ.IvYELyObbCwB45mIMf81HFDgqdU");
+bot.login(process.env.token);
 
 bot.on('ready',function(){
     console.log(`Bot is now online!, with ${bot.users.size} users, in ${bot.channels.size} channels of ${bot.guilds.size} guilds.`);
