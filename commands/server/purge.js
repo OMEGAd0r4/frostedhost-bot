@@ -16,7 +16,7 @@ class purgeCommand extends commando.Command {
     });
   }
 
-  async run(message)
+  async run(message, args)
   {
     var messagedeleteargs = message.content.slice(prefix.length).split(/ +/);
     var numberofmessagesdeleted = messagedeleteargs.join(" ").slice(6);
